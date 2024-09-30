@@ -7,6 +7,6 @@ package org.aston.jdbc;
 public class App 
 {
     public static void main( String[] args ){
-        
+
     }
 }

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                      https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0"
+         metadata-complete="true">
+
+    <servlet>
+        <servlet-name>UserAddServlet</servlet-name>
+        <servlet-class>org.aston.jdbc.controller.user.UserAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserAddServlet</servlet-name>
+        <url-pattern>/useradd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserGetAllServlet</servlet-name>
+        <servlet-class>org.aston.jdbc.controller.user.UserGetAllServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserGetAllServlet</servlet-name>
+        <url-pattern>/userGetAll</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserDeleteByIdlServlet</servlet-name>
+        <servlet-class>org.aston.jdbc.controller.user.UserDeleteByIdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserDeleteByIdlServlet</servlet-name>
+        <url-pattern>/userdelete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserFindByIdlServlet</servlet-name>
+        <servlet-class>org.aston.jdbc.controller.user.UserGetByIdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserFindByIdlServlet</servlet-name>
+        <url-pattern>/findById</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserUpdateServlet</servlet-name>
+        <servlet-class>org.aston.jdbc.controller.user.UserUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserUpdateServlet</servlet-name>
+        <url-pattern>/userupdate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductServletGetAll</servlet-name>
+        <servlet-class>org.aston.jdbc.controller.product.ProductGetAllServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductServletGetAll</servlet-name>
+        <url-pattern>/productGetAll</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductServletAdd</servlet-name>
+        <servlet-class>org.aston.jdbc.controller.product.ProductAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductServletAdd</servlet-name>
+        <url-pattern>/productadd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductServletDelete</servlet-name>
+        <servlet-class>org.aston.jdbc.controller.product.ProductDeleteByIdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductServletDelete</servlet-name>
+        <url-pattern>/productdelete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductServletGetById</servlet-name>
+        <servlet-class>org.aston.jdbc.controller.product.ProductGetByIdServlett</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductServletDelete</servlet-name>
+        <url-pattern>/productGetById</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductServletUpdate</servlet-name>
+        <servlet-class>org.aston.jdbc.controller.product.ProductUpdateServlett</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductServletUpdate</servlet-name>
+        <url-pattern>/productupdate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderServletGetAll</servlet-name>
+        <servlet-class>org.aston.jdbc.controller.order.OrderGetAllServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderServletGetAlle</servlet-name>
+        <url-pattern>/orderGetAll</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderServletAdd</servlet-name>
+        <servlet-class>org.aston.jdbc.controller.order.OrderAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderServletAdd</servlet-name>
+        <url-pattern>/orderadd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderServletDelete</servlet-name>
+        <servlet-class>org.aston.jdbc.controller.order.OrderDeleteByIdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderServletDelete</servlet-name>
+        <url-pattern>/orderdelete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderServletGetById</servlet-name>
+        <servlet-class>org.aston.jdbc.controller.order.OrderGetByIdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderServletGetById</servlet-name>
+        <url-pattern>/orderGetById</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderServletUpdate</servlet-name>
+        <servlet-class>org.aston.jdbc.controller.order.OrderUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderServletUpdate</servlet-name>
+        <url-pattern>/orderupdate</url-pattern>
+    </servlet-mapping>
+</web-app>
